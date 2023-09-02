@@ -1,8 +1,5 @@
-# Songs with Friends - Stephen Chung, Christopher Bried, Jonathan Cheng
-( ᵔ ᴥ ᵔ )
-
-## Reflection
-For this project, we ran into some minor details.
+# Songs with Friends
+This is a communal Spotify listening room for all users to listen to the same music at the same time!
 
 ## Features: 
 1. Database reset endpoint - should reset upon host exit.
@@ -11,13 +8,14 @@ For this project, we ran into some minor details.
 4. Able to skip to different position in track.
 5. Every user is able to remove songs.
 6. Displays a warning if no active device is open for the user.
-7. Progress bar display is at current position of song.
+7. Progress bar display is at the current position of song.
 8. Displays current song being played.
 9. Volume buttons.
 
+## Reflection
+This project was the final project for my Web Development course at UC Davis. Although it was difficult, it was rewarding to complete at the end, as this was the first time I successfully implemented an API. Spotify's website provided clear, easy-to-follow instructions to follow for the implementation of their API. In addition, there were some potential bugs that we encountered during runtime: 
+1. Playback might get choppy and jump locations when toggling volume with the volume button 
+2. The database does not reset on host exit at times (not common) -> pls manually reset in users.db table Users if occur 
 
-
-## Potenial bugs in runtime
-1. Playback might get choppy and jump locations when toggling vloume with the volume button 
-2. database does not reset on host exit at times (not common) -> pls manually reset in users.db table Users if occur 
-3. Encountered on June 7, receive warning for too many request and kicked out of app
+## Authors
+Jonathan Cheng, Stephen Chung, Christopher Bried
