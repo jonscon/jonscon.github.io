@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+:root{
+  --spotify-green:#1db954;
+  --light-gray:#b3b3b3;
+  --mid-gray:#535353;
+  --dark-gray:#282828;
+  --black:#000;
+}
+
+html{
+  height:100%
+}
+
+body {
+  height:90%;
+  font-family: "Open Sans", sans-serif;
+  margin: 2em 1em;
+  line-height: 1.5em;
+  background-color: black;
+  color: white;
+}
+
+#top-bar{
+  text-align:left;
+  color:white;
+}
+
+#createPlaylist{
+  background-color: black;
+  color: white;
+  border: solid 3px var(--spotify-green);
+  padding:10px;
+  border-radius:10px;
+  margin-left:30%;
+  margin-right:30%;
+  cursor:pointer;
+  font-size: 18px;
+}
+
+#main-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+#center-block{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+@media (max-width: 768px) {
+  #main-card {
+    line-height: 1.3;
+    text-align: center;
+  }
+  #createPlaylist {
+    width: 200px;
+  }
+}
